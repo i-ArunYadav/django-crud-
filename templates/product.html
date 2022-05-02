@@ -1,0 +1,3 @@
+{% for form in form %}
+	<a href="{% url 'item' form.id %}">{{form}}</a>
+{% endfor %}

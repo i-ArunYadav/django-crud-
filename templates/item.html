@@ -1,0 +1,31 @@
+<form action= " " method = "POST">
+
+	<table>
+		
+		<tr>
+			<th>item_list &nbsp;&nbsp;&nbsp;</th>
+			<th>price &nbsp;&nbsp;&nbsp;</th>
+			<th>quantity</th>
+		</tr>
+		
+
+			{% for i in form %}
+			<tr>
+				<td>{{i.item_list}}</td>
+				<td> {{i.price}}</td>
+				<td>{{i.quantity}}</td>
+				<td> 
+					<input type="checkbox" name='anything' value={{i.price}}>
+				</td>
+				<td>
+					<input type="input" name='nothing' value="qn">
+				</td>
+			</tr>
+			{% endfor %}
+
+	</table>
+	<input type="submit" value="Submit"> <br></br>
+
+
+</form>
+
